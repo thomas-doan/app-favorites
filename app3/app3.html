@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="app3.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>shazam application</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../app-favorites.html">
+            <img src="img/shazam_logo.svg" alt="shazam logo" class="logo">
+            </a>
+
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Trouve ta musique ...">
+ 
+            </form>
+        </header>
+
+
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>shazam</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#mission" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span>Notre mission</span>
+                        </a>
+                    </li>
+
+
+                    <li class="side-nav__item">
+                        <a href="#mymusic" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Mes musiques</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#lestops" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Les tops</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#contact" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+   
+            </nav>
+
+
+
+            <main class="shazam-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="img/shazam1.png" width="50%" height="60%" alt="Photo of shazam 1"
+                            class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/shazam2.png" width="50%" height="60%" alt="Photo of shazam 2"
+                            class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/shazam3.png" width="50%" height="60%" alt="Photo of shazam 3"
+                            class="gallery__photo">
+                    </figure>
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        Shazam identifie des titres diffusés autour de vous
+                    </h1>
+
+
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">4,8/5</div>
+                        <div class="overview__rating-count">5M d'avis</div>
+                    </div>
+                </div>
+
+                <div class="detail">
+
+                    <div class="shz">
+                        <h2 class="shz__dl-now">
+                            Identifiez les titres autour de vous où que vous soyez
+                        </h2>
+                        <button class="btn" href="https://play.google.com/store/apps/details?id=com.shazam.android"
+                            target="_blank">
+                            <span class="btn__visible">Shazam Moi</span>
+                            <span class="btn__invisible"
+                                onclick="window.location.href='https://play.google.com/store/apps/details?id=com.shazam.android';"
+                                target="_blank">Telecharger</span>
+
+                        </button>
+                    </div>
+
+                    <div class="description">
+
+                        <p class="paragraph" id="mission">
+                            <span>Notre mission </span>est d'aider les gens à reconnaître et à interagir avec le monde
+                            qui les
+                            entoure.
+                        </p>
+
+                        <p class="paragraph">
+                            Shazam est une application pour mobile qui reconnaît la musique diffusée autour de vous.
+                            C'est le meilleur moyen de découvrir, d'explorer et de partager la musique que vous aimez.
+                            Shazam connecte plus de 1 milliard de personnes. Il nous a fallu 10 ans pour atteindre 1
+                            milliard de Shazams, et nous identifions désormais 1 milliard de titres tous les mois !
+                            Cette application exceptionnelle est à présent disponible sur l'Apple Store et l'Android
+                            Store. Nous sommes toujours en quête d'innovations pour satisfaire nos utilisateurs.<br />
+                            <br />
+                        </p>
+                        <p class="fonction">fonctionnement</p>
+                        <ol class="list">
+                            <li class="list__item">Musique inconnue ?</li>
+                            <li class="list__item">ouvrir Shazam</li>
+                            <li class="list__item">Click logo Shazam</li>
+                            <li class="list__item">Decouvrir l'artiste</li>
+                            <li class="list__item">synchronisé vos resultats</li>
+                            <li class="list__item">spotify deezer applemusic</li>
+                            <li class="list__item">Enregistrer vos music Shazamé</li>
+                            <li class="list__item">Vibrer sur votre découverte</li>
+                        </ol>
+                        <div class="mymusic">
+                            <p class="mymusic__count">
+                                Mes musiques
+                            </p>
+                            <div class="mymusic__love" id="mymusic">
+                                <img src="img/mlove-1.png" alt="Music love 1" class="mymusic__photo">
+                                <img src="img/mlove-2.png" alt="Music love 2" class="mymusic__photo">
+                                <img src="img/mlove-3.png" alt="Music love 3" class="mymusic__photo">
+                                <img src="img/mlove-4.png" alt="Music love 4" class="mymusic__photo">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <H1 class="top" id="lestops">Les tops</H1>
+                <div class="gallery-top">
+                    <figure class="gallery__item">
+                        <img src="img/top1.png" alt="TOP shazam 1 france" class="gallery__photo__top">
+                        <p>Farruko</p>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/top2.png" alt="TOP of shazam 2 france" class="gallery__photo__top">
+                        <p>Grand Corps Malade & Kimberose</p>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/top3.png" alt="TOP of shazam 3 france" class="gallery__photo__top">
+                        <p>Elton John & Dua Lipa</p>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/top4.png" alt="TOP of shazam 3 france" class="gallery__photo__top">
+                        <p>CKay Feat. ElGrande Toto</p>
+                    </figure>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="container-f">
+            <form action="/action_page.php">
+                <h1>Contact</h1>
+
+                <input type="text" id="fname" name="firstname" placeholder="Votre prénom">
+
+                <input type="text" id="lname" name="lastname" placeholder="Votre Nom">
+
+                <textarea id="subject" name="subject" placeholder="Votre sujet ..." style="height:50px"></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+        <div class="nav-footer">
+            <H1>Nos Réseaux sociaux</H1>
+            <a href="https://www.facebook.com/Shazam" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-square whitefb"></i> </a>
+
+            <a href="https://instagram.com/shazam/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram whiteinsta"></i> </a>
+    
+
+            <a href="https://twitter.com/shazam" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter" id="twitter"></i></a>
+        </div>
+
+   
+            <p>&copy; 2021 by shazam. All rights reserved.</p>
+       
+
+    </footer>
+
+</body>
+
+</html>
